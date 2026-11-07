@@ -1,0 +1,21 @@
+{
+  "name": "tethered-trust",
+  "version": "0.1.0",
+  "description": "Fit, compatibility and recall checks for AI agents before they buy. Client and tool definitions for the Tethered Trust API and MCP server.",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": { "types": "./src/index.d.ts", "default": "./src/index.mjs" },
+    "./tools": { "types": "./src/tools.d.ts", "default": "./src/tools.mjs" }
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "sideEffects": false,
+  "keywords": ["ai-agents", "mcp", "model-context-protocol", "compatibility", "product-compatibility", "shopping-agent", "agentic-commerce", "recalls", "x402", "function-calling", "tool-use", "ucp", "acp"],
+  "homepage": "https://tetheredtrust.com/agents",
+  "repository": { "type": "git", "url": "git+https://github.com/tetheredtrust/tethered-trust-js.git" },
+  "bugs": { "url": "https://github.com/tetheredtrust/tethered-trust-js/issues" },
+  "author": "Chimes In LLC <support@chimes-in.com>",
+  "license": "MIT"
+}

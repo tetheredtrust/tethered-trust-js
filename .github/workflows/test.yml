@@ -1,0 +1,10 @@
+name: test
+on: [push, pull_request]
+jobs:
+  sandbox:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node -e 'import("./src/index.mjs").then(async ({ TetheredTrust }) => { const r = await new TetheredTrust({ sandbox: true }).checkCart({ owned: ["Lenovo ThinkPad T480"], line_items: [{ id: "a", title: "Crucial CT16G4SFRA32A" }] }); if (!r.decision) process.exit(1); console.log(r.decision); })'
