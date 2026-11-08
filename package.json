@@ -1,6 +1,6 @@
 {
   "name": "tethered-trust",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fit, compatibility and recall checks for AI agents before they buy. Client and tool definitions for the Tethered Trust API and MCP server.",
   "type": "module",
   "main": "./src/index.mjs",
